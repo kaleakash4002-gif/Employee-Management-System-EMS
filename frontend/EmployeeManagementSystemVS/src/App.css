@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  background: #2563eb;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-card > p:first-of-type {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+.login-card label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.login-card button {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.message {
+  overflow-wrap: anywhere;
+  color: #b91c1c;
+  margin-top: 18px;
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  background: #1e293b;
+  color: white;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dashboard-header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.dashboard-header button {
+  background: #dc2626;
+}
+
+.dashboard-header button:hover {
+  background: #b91c1c;
+}
+
+.dashboard-content {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 0 22px;
+}
+
+.dashboard-content h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.dashboard-content > p {
+  color: #475569;
+}
+
+.employee-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.employee-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.employee-card h3 {
+  margin-top: 0;
+  color: #1d4ed8;
+}
+
+.employee-card p {
+  color: #475569;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    padding: 18px;
+    align-items: flex-start;
+  }
+
+  .dashboard-header h1 {
+    font-size: 18px;
+  }
+
+  .dashboard-content h2 {
+    font-size: 24px;
+  }
+}
